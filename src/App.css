@@ -1,0 +1,285 @@
+body{
+  background-image: url("../public/brickwall.jpg"); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center center; 
+}
+
+.App {
+  text-align: center;
+  max-height: calc(80%);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: hsl(0, 91%, 27%);
+}
+
+@media screen and (min-width:777px){
+  .nav-link {
+    padding:18px 0;
+    min-width:120px;
+  }
+  .navbar {
+    padding: 0
+  }
+}
+
+body {
+  margin: 0;
+  padding: 20;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* In your stylesheet or within style tags */
+.active-tab {
+  background-color: #ff006a; /* Change the background color for active tab */
+  color: #fff; /* Change the text color for active tab */
+}
+
+.inactive-tab {
+  background-color: #f8f9fa; /* Change the background color for inactive tab */
+  color: #000; /* Change the text color for inactive tab */
+}
+
+.layout {
+  min-height: 600px;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.block {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid #282c34;
+  border-radius: 20px;
+  margin: 8px;
+  height: 100%;
+  max-width: 600 px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+  background-color: rgb(186, 31, 46);
+  color: white;
+  font-size: 3pc;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.btn-primary {
+  color: #fff;
+  background-color: rgb(186, 31, 46);
+  border-color: rgb(186, 31, 46);
+}
+
+.with-image {
+  position: relative;
+}
+
+.with-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px; /* Aplica el mismo borde que los otros bloques */
+}
+
+containerD{
+  display: grid;
+  grid-template-areas:
+   "bal bal pic"
+   "atm atm pic"
+   "atm atm pic"
+  ;
+
+  width: min(100% - 15px, 850px);
+  height: min(100% - 15px, 650px);
+  margin-inline: auto;
+
+}
+
+containerW{
+  display: grid;
+  grid-template-areas:
+   "pic atm atm"
+   "pic atm atm"
+   "pic bal bal"
+  ;
+
+  width: min(100% - 15px, 850px);
+  height: min(100% - 15px, 650px);
+  margin-inline: auto;
+
+}
+
+bal {grid-area: bal;
+     background-color: rgb(186, 31, 46);
+     margin-inline: 10px;
+     margin-bottom: 5px;
+     margin-top: 5px;
+     border-radius: 10px 0;
+     box-shadow: 2px 2px 5px 0px black;
+     color: #ffffff;
+     font-weight: bolder;
+}
+
+
+
+atm {display: grid;
+    grid-area: atm;
+    background-color: rgb(186, 31, 46);
+    margin-inline: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 0 10px;
+    box-shadow: 2px 2px 5px 0px black;
+    padding: 30px;
+    align-items: center;
+    justify-items: center;
+
+}
+
+
+
+pic {grid-area: pic;
+  max-width: 200px;
+  max-height: 750px;
+  justify-self: center;
+
+}
+
+/* paa quitar subrayado*/
+a {
+  text-decoration: none; 
+}
+
+/* Estilo para el enlace cuando se hace hover */
+a:hover {
+  text-decoration: none; 
+  color: inherit; 
+  text-shadow: 0 0 5px #ffffff;
+  transition: text-shadow 0.8s ease; 
+}
+
+/* Estilos para el cuadro de comentarios */
+.comment-box {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  resize: none;
+}
+
+button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Estilos para los comentarios */
+.comment {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button:hover{
+  box-shadow: 0 0 8px #ffffff;
+  transition: box-shadow 0.6s ease; 
+}
+
+input{
+  max-width: 900px;
+}
+
+.totalBalance{
+  display: grid;
+  justify-items: center;
+
+}
+
+#submit-comment{
+  background-color:  rgb(186, 31, 46);
+}
+
+.nav-link:active{
+  background-color:  rgb(186, 31, 46);
+  color:white;
+  box-shadow: 0 0 8px #000000;
+  transition: box-shadow 0.6s ease; 
+}
+
+.login{
+  display: grid;
+  justify-content: center;
+  padding: 30;
+  max-width: 500;
+  min-height: 900;
+  margin: "auto";
+}
+
+.allData{
+  display: grid;
+  justify-content: center;
+  color:#ffffff;
+  padding: 30;
+  max-width: 500;
+  min-height: 900;
+  margin: "auto";
+  background-color:  rgb(186, 31, 46);
+ 
+
+}
+
+.card-background {
+  background-image: url("../public/fondo.jpg"); 
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  background-position: center center; /* Centra la imagen en el fondo */
+  box-shadow: 0 0 0 1 rgba(0, 0, 0, 1);
+  color:#ffffff;
+
+}
+
